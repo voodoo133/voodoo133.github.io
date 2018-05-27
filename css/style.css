@@ -48,8 +48,6 @@ body {
 
 .layout:hover {
   border-color: #fff;
-  
-  cursor: pointer;
 }
 
 .layout:hover::before {
@@ -66,7 +64,7 @@ body {
 }
 
 .layout:hover .layout-buttons {
-  display: block;
+  display: flex;
 }
 
 .layout-image-wrap {
@@ -86,11 +84,11 @@ body {
 
 .layout-buttons {
   position: absolute;
-  
   top: 50%;
   left: 50%;
   
   display: none;
+  flex-wrap: wrap;
   
   transform: translate(-50%, -50%);
 }
@@ -98,12 +96,21 @@ body {
 .layout-button {
   position: relative;
   
-  padding: 10px 10px 10px 40px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 10px 10px 50px;
   
-  border: 2px solid #fff;
-  
+  font-weight: 700;
   color: #fff;
   text-decoration: none;
+  
+  border: 2px solid #fff;
+}
+
+.layout-button:hover {
+  color: #000;
+  
+  background-color: #fff;
 }
 
 .layout-button::before {
@@ -116,10 +123,26 @@ body {
   width: 25px;
   height: 25px;
   
-  background-image: url('../img/eye.png');
   background-repeat: no-repeat;
   background-size: contain;
   
   transform: translateY(-50%);
+}
+
+.layout-button.view-layout::before {
+  background-image: url('../img/eye.png');
+}
+
+.layout-button.view-layout:hover::before {
+  background-image: url('../img/eye-hover.png');
+}
+
+
+.layout-button.view-code::before {
+  background-image: url('../img/code.png');
+}
+
+.layout-button.view-code:hover::before {
+  background-image: url('../img/code-hover.png');
 }
 
