@@ -31,13 +31,13 @@ a {
 .main-header .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .header-nav-button {
   position: relative;
   
-  width: 22px;
+  width: 19px;
   height: 17px;
   margin-left: 10px;
   
@@ -65,6 +65,10 @@ a {
 }
 
 .header-logo {
+  position: relative;
+  top: 8px;
+  left: 53px;
+  
   display: flex;
   align-items: center;
     
@@ -79,7 +83,7 @@ a {
 
 .social-list {
   display: flex;
-  margin: 0;
+  margin: 0 20px 0 0;
   padding: 0;
   
   list-style-type: none;
@@ -115,8 +119,8 @@ a {
 }
 
 .advantages {
-  padding-top: 30px;
-  padding-bottom: 51px;
+  padding-top: 40px;
+  padding-bottom: 49px;
    
   background-color: #fcdb00;
 }
@@ -129,8 +133,8 @@ a {
 }
 
 .advantages-list .item-header {
-  margin: 0 0 35px;
-  padding: 0;
+  margin: 0 0 38px;
+  padding: 0 9px 0 0;
   
   font-size: 48px;
   line-height: 18px;
@@ -139,8 +143,9 @@ a {
 }
 
 .advantages-list .item-text {
-  margin: 0 0 35px;
-  padding: 0;
+  width: 740px;
+  margin: 0 0 28px;
+  padding: 0 0 0 100px;
   
   font-size: 20px;
   line-height: 24px;
@@ -151,8 +156,8 @@ a {
 .apps-list {
   display: flex;
   justify-content: center;
-  margin: 0 0 140px;
-  padding: 0;
+  margin: 0 0 148px;
+  padding: 0 20px 0 0;
   
   list-style-type: none;
 }
@@ -161,8 +166,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75px;
-  height: 75px;
+  width: 70px;
+  height: 70px;
   box-sizing: border-box;
   margin-right: 35px;
   
@@ -178,7 +183,7 @@ a {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 0;
+  padding: 0 13px 0 0;
   
   list-style: none;
 }
@@ -197,12 +202,13 @@ a {
 }
 
 .features {
-  padding-top: 150px;
-  padding-bottom: 100px;
+  padding-top: 113px;
+  padding-bottom: 95px;
 }
 
 .features-header {
-  margin-bottom: 25px;
+  margin: 0 0 16px 0;
+  padding: 0 20px 0 0;
   
   font-size: 32px;
   line-height: 32px;
@@ -211,7 +217,9 @@ a {
 }
 
 .features-text {
-  margin-bottom: 70px;
+  width: 740px;
+  margin: 0 0 61px 0;
+  padding: 0 0 0 100px;
   
   font-size: 20px;
   line-height: 24px;
@@ -223,19 +231,19 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 0 0 23px;
   
   background-image: url("../img/iPad-Mini-black-facing.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 49% center;
   
   list-style-type: none;
 }
 
 .features-list .list-item {
-  width: 240px;
+  width: 230px;
   height: 190px;
-  padding: 40px 10px 0;
+  padding: 59px 15px 0px;
 }
 
 .features-list .list-item:nth-of-type(2n + 1) {
@@ -246,8 +254,18 @@ a {
   margin-left: 220px;
 }
 
+.features-list .list-item.html3-and-css3 {
+  padding-top: 9px;
+  padding-left: 11px;
+}
+
+.features-list .list-item.free-download {
+  padding-top: 8px;
+  padding-left: 19px;
+}
+
 .features-list .item-header {
-  margin: 0;
+  margin: 0 0 11px;
   padding: 0;
   
   font-size: 22px;
@@ -264,7 +282,7 @@ a {
 
 .feedback {
   padding-top: 91px;
-  padding-bottom: 115px;
+  padding-bottom: 51px;
   
   background-color: #010101; 
 }
@@ -275,7 +293,7 @@ a {
 
 .feedback-header {
   margin: 0 0 16px;
-  padding: 0 35px 0 0;
+  padding: 0 21px 0 0;
   
   font-size: 32px;
   line-height: 32px;
@@ -285,8 +303,8 @@ a {
 }
 
 .feedback-text {
-  margin: 0 0 25px;
-  padding: 0 35px 0 0;
+  margin: 0 0 40px;
+  padding: 0 18px 0 0;
   
   font-size: 20px;
   line-height: 24px;
@@ -303,7 +321,9 @@ a {
 }
 
 .feedback-form .form-item {
-  margin-right: 20px;
+  width: 580px;
+  margin: 0 20px 0 0;
+  padding-left: 9px;
 }
 
 .feedback-form .form-field {
@@ -314,6 +334,11 @@ a {
   
   border: none;
   border-radius: 5px;
+}
+
+.form-item.email-field .form-field {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .feedback-form .form-button {
@@ -329,7 +354,7 @@ a {
 }
 
 .main-footer {
-  padding-bottom: 145px;
+  padding-bottom: 210px;
   
   color: #ffffff;
   background-color: #010101;
@@ -342,7 +367,7 @@ a {
 .footer-contacts {
   flex-basis: 286px;
   margin-right: 20px;
-  padding-left: 4px;
+  padding-left: 12px;
   
   font-style: normal;
 }
@@ -379,15 +404,15 @@ a {
 }
 
 .group-items.col-1 {
-  margin-right: 61px; 
+  margin-right: 97px; 
 }
 
 .group-items.col-2 {
-  margin-right: 74px
+  margin-right: 109px
 }
 
 .group-items.col-3 {
-  margin-right: 46px; 
+  margin-right: 81px; 
 }
 
 .items-list {
