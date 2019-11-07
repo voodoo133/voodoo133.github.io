@@ -7,7 +7,7 @@
       Just Funny Tap
     </title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet"/>
-    <link href="css/style.css?1" rel="stylesheet"/>
+    <link href="css/style.min.css" rel="stylesheet" />
   </head>
 </html>
 <body class="index-page">
@@ -48,129 +48,31 @@
   <main class="content">
     <div class="container">
       <section class="funs">
-        <ul class="funs__list">
-          <li class="funs__list-item fun">
-            <h2 class="fun__header">
-              When my cat wants to sit
-            </h2>
-            <div class="fun__content">
-              <img class="fun__img" src="img/cat.png" alt="fun_image" />
-              <div class="fun__author">
-                Fun: John Doe
-              </div>
-              <div class="fun__meta">
-                <div class="fun__rate">
-                  <button class="fun__rate-btn fun__rate-btn--up">
-                    ▲
-                  </button>
-                  <span class="fun__rating">
-                    150
-                  </span>
-                  <button class="fun__rate-btn fun__rate-btn--down">
-                    ▼
-                  </button>
-                </div>
-                <div class="fun__comments">
-                  15
-                </div>
-                <button class="fun__play">
-                </button>
-              </div>
-            </div>
-          </li>
-          <li class="funs__list-item fun">
-            <h2 class="fun__header">
-              When my cat wants to sit
-            </h2>
-            <div class="fun__content">
-              <img class="fun__img" src="img/cat.png" alt="fun_image" />
-              <div class="fun__author">
-                Fun: John Doe
-              </div>
-              <div class="fun__meta">
-                <div class="fun__rate">
-                  <button class="fun__rate-btn fun__rate-btn--up">
-                    ▲
-                  </button>
-                  <span class="fun__rating">
-                    150
-                  </span>
-                  <button class="fun__rate-btn fun__rate-btn--down">
-                    ▼
-                  </button>
-                </div>
-                <div class="fun__comments">
-                  15
-                </div>
-                <button class="fun__play">
-                </button>
-              </div>
-            </div>
-          </li>
-          <li class="funs__list-item fun">
-            <h2 class="fun__header">
-              When my cat wants to sit
-            </h2>
-            <div class="fun__content">
-              <img class="fun__img" src="img/cat.png" alt="fun_image"/>
-              <div class="fun__author">
-                Fun: John Doe
-              </div>
-              <div class="fun__meta">
-                <div class="fun__rate">
-                  <button class="fun__rate-btn fun__rate-btn--up">
-                    ▲
-                  </button>
-                  <span class="fun__rating">
-                    150
-                  </span>
-                  <button class="fun__rate-btn fun__rate-btn--down">
-                    ▼
-                  </button>
-                </div>
-                <div class="fun__comments">
-                  15
-                </div>
-                <button class="fun__play">
-                </button>
-              </div>
-            </div>
-          </li>
-          <li class="funs__list-item fun">
-            <h2 class="fun__header">
-              When my cat wants to sit
-            </h2>
-            <div class="fun__content">
-              <img class="fun__img" src="img/cat.png" alt="fun_image" />
-              <div class="fun__author">
-                Fun: John Doe
-              </div>
-              <div class="fun__meta">
-                <div class="fun__rate">
-                  <button class="fun__rate-btn fun__rate-btn--up">
-                    ▲
-                  </button>
-                  <span class="fun__rating">
-                    150
-                  </span>
-                  <button class="fun__rate-btn fun__rate-btn--down">
-                    ▼
-                  </button>
-                </div>
-                <div class="fun__comments">
-                  15
-                </div>
-                <button class="fun__play">
-                </button>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <button class="funs__more">
+        <div class="funs__processing">
+          <img class="funs__processing-img" src="img/ajax-loader.svg" alt="ajax-loader" />
+          <p class="funs__processing-text">Please, wait</p>
+        </div>
+        <ul class="funs__list"></ul>
+        <button class="funs__more funs__more--hide">
           More FUNs ▼
         </button>
       </section>
     </div>
   </main>
-  <script src="js/script.js"></script>
+  <div class="modal modal--auth modal--hide">
+    <form class="modal__content" data-type="auth">
+      <label class="modal__label">
+        <span class="modal__label-text">Email</span>
+        <input class="modal__input modal__input--email" type="email" />
+      </label>
+      <label class="modal__label">
+        <span class="modal__label-text">Password</span>
+        <input class="modal__input modal__input--password" type="password" />
+      </label>
+      <button class="modal__btn modal__btn--change-form">Sign up</button>
+      <button class="modal__btn modal__btn--submit" type="submit">Sign in</button>
+      <p class="modal__result modal__result--hide"></p>
+    </form>
+  </div>
+  <script src="js/script.min.js"></script>
 </body>
